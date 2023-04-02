@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  let apiKey = import.meta.env.VITE_API_KEY;
-  
+  // let apiKey = import.meta.env.VITE_API_KEY;
+
   // State to manage user input
   const [userInput, setUserInput] = useState({
     location: ""
@@ -30,13 +30,13 @@ function App() {
   function getWeather() {
     // GET METHOD of the Get city CODE API
     fetch(`
-      http://dataservice.accuweather.com/locations/v1/cities/search?apikey=%09${apiKey}&q=${userInput.location}`
+      http://dataservice.accuweather.com/locations/v1/cities/search?apikey=%09${import.meta.env.VITE_API_KEY}&q=${userInput.location}`
     )
      .then(response => response.json())
 
      // Passing the city code to the AccuWeather API
      .then(response => {
-      fetch(`http://dataservice.accuweather.com/currentconditions/v1/${response[0].Key}?apikey=${apiKey}`)
+      fetch(`http://dataservice.accuweather.com/currentconditions/v1/${response[0].Key}?apikey=${import.meta.env.VITE_API_KEY}`)
        .then(response => response.json())
        .then(response => setData(response)) // Storing the API data in the state
 
