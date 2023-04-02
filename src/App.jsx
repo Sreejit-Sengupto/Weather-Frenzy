@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const apiKey = import.meta.env.VITE_API_KEY;
+  let apiKey = import.meta.env.VITE_API_KEY;
+  
   // State to manage user input
   const [userInput, setUserInput] = useState({
     location: ""
