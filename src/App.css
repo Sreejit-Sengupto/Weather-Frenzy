@@ -1,0 +1,131 @@
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+.search--section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  background-color: #0D0221;
+  padding: 20px;
+}
+.user--input {
+  margin-right: 20px;
+  width: 15rem;
+  height: 3rem;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Varela Round', sans-serif;
+}
+.user--input::placeholder {
+  padding: 10px;
+}
+.get--btn {
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #F26419;
+  font-family: 'Varela Round', sans-serif;
+}
+.get--btn:hover {
+  cursor: pointer;
+  background-color: #D74E09;
+}
+
+.prompt--text {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.display--section {
+  width: 100%;
+  height: 80vh;
+}
+.city--name--section {
+  text-align: center;
+  margin-top: 20px;
+}
+.city--name--section h1 {
+  font-size: 4rem;
+  color: #FA9500;
+}
+.underliner {
+  width: 25%;
+  height: 0.5rem;
+  background-color: red;
+  margin: auto;
+  border: none;
+  border-radius: 8px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 8rem;
+  font-size: 2rem;
+}
+.details--text {
+  padding: 0 20px 0 20px;
+  background-image: linear-gradient(145deg, #0D0221, #26408B);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 10px 10px 10px #002244;
+  width: 18.75rem;
+  height: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+}
+.footer a {
+  text-decoration: none;
+  color: #F26419;
+}
+
+@media screen and (max-width: 480px) {
+  .search--section {
+    overflow-y: hidden;
+  }
+
+  .search--section > h1 {
+    width: 10rem;
+  }
+
+  .searchbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user--input {
+    width: 9rem;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+
+  .details {
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+
+  .details--text {
+    width: 10.75rem;
+    height: 10.75rem;
+    margin: 5px;
+  }
+}
