@@ -95,7 +95,7 @@
   color: #F26419;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .search--section {
     overflow-y: hidden;
   }
@@ -112,9 +112,79 @@
   }
 
   .user--input {
-    width: 9rem;
+    width: 12rem;
     margin-right: 0px;
     margin-bottom: 5px;
+  }
+
+  .prompt--text {
+    max-width: 300px;
+    margin: 19rem auto;
+  }
+
+  .details {
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+
+  .details--text {
+    width: 10.75rem;
+    height: 10.75rem;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .search--section > h1 {
+    font-size: 1em;
+    max-width: 1em;
+  }
+
+  .user--input {
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .get--btn {
+    height: 1.5rem;
+    width: 4rem;
+  }
+
+  .prompt--text {
+    margin: 15rem auto;
+  }
+
+  .city--name--section h1 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search--section {
+    overflow-y: hidden;
+  }
+
+  .search--section > h1 {
+    width: 10rem;
+  }
+
+  .searchbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user--input {
+    width: 12rem;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+
+  .prompt--text {
+    max-width: 300px;
+    margin: 19rem auto;
   }
 
   .details {
