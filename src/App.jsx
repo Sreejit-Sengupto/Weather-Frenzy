@@ -2,10 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Display from "./components/Display";
-import API_KEY from "../apiKey";
 
 function App() {
-  const apiKey = API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
   console.log(apiKey);
 
   // State to manage user input
